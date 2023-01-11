@@ -10,6 +10,9 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
+    
+    
+    
     <Window.DataContext>
         <Binding Path="Main" Source="{StaticResource Locator}" />
     </Window.DataContext>
@@ -18,6 +21,7 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
+        
         <oxyplot:PlotView Model="{Binding Model}" />
         <oxyplot:Plot Title="实时曲线" Grid.Row="1">
             <oxyplot:Plot.Axes>
